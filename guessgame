@@ -1,0 +1,18 @@
+n=15
+guess=1
+print("hey welcome to game")
+while (guess<=9):
+    ins = int(input("ENter the number :"))
+    if ins<15:
+        print("smaller")
+    elif ins>15:
+        print("greater")
+    else:
+        print("u have won\n")
+        print(guess,"guesses left")
+
+    print(9-guess,"available")
+    guess=guess+1
+
+if(guess>9):
+ print("game over")
